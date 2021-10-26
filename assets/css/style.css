@@ -1,8 +1,9 @@
 /* COMMON STYLES */
+
 body {
   width: 1136px;
-  margin: 0 auto;
   font-family: "Trip Sans", Arial, sans-serif;
+  margin: auto;
 }
 
 h1 {
@@ -23,7 +24,6 @@ h3 {
   line-height: 44px;
   font-weight: 700;
   padding: 20px 40px;
-  margin-top: 20px;
 }
 
 p {
@@ -62,7 +62,12 @@ ul {
 }
 
 nav li {
-  padding: 20px;
+  padding: 10px 15px;
+  margin: 5px;
+}
+header nav li:hover {
+  background-color: lightgrey;
+  border-radius: 20px;
 }
 
 .button {
@@ -100,11 +105,20 @@ h1 span {
   align-items: center;
   line-height: 20px;
 }
+.menu li:hover {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+}
 
 /* Photos */
 .photos {
   display: flex;
   margin: 25px 0px;
+}
+
+.photos img:hover {
+  opacity: 0.7;
 }
 
 .first-photo img {
@@ -136,27 +150,18 @@ h1 span {
 }
 
 /* Osaka description */
-.osaka-description {
+.osaka {
   display: flex;
-  height: 500px;
   margin-bottom: 500px;
-  justify-content: space-between;
-}
-.flexbox {
-    max-height: 500px;
 }
 
 .summary-text {
-
-  flex: 1.5;
-  padding-right: 30px
+  padding-right: 80px;
 }
 
-.map{
-
+.map {
   border-radius: 20px;
-  background-color: #ff5d5d;
-  flex: 1
+  width: 450px;
 }
 
 .map p {
@@ -164,15 +169,20 @@ h1 span {
 }
 
 .map button {
-    background-color:#333333;
-    color: white;
-    border-radius: 20px;
-    margin-left:40px;
-    margin-bottom: 40px;
-    padding: 20px;
-    font-size: 20px
+  background-color: #333333;
+  color: white;
+  border-radius: 20px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  font-size: 20px;
 }
-
-.map-container img {
- 
+.map-text {
+  background-color: #ff5d5d;
+  border-radius: 20px;
+}
+.map-image {
+  margin-top: -20px;
+  overflow: hidden;
+  max-height: 200px;
 }
