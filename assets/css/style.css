@@ -1,0 +1,110 @@
+/* COMMON STYLES */
+body {
+    width: 1136px;
+    margin: 0 auto;
+    border: 2px dotted green;
+    font-family: "Trip Sans", Arial, sans-serif;
+}
+
+h1 {
+    font-size: 54px;
+    line-height: 64px;
+    letter-spacing: 1.1;
+    font-weight: 900;
+
+}
+
+/* HEADER */
+header {
+    margin-top: 160px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 188px;
+}
+
+/* Navbar */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+ul {
+    display: flex;
+}
+
+nav li {
+    padding: 20px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* MAIN */
+
+/* Header and menu buttons */
+h1 span {
+    color: #FF5D5D;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.menu li {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 140px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 20px;
+}
+
+/* Photos */
+.photos{
+    display: flex;
+    margin-top: 50px;
+}
+
+.first-photo img{
+    width: 648px;
+    margin-right: 2px;
+}
+
+#image2, #image3 {
+width: 480px;
+height: 215px;
+align-items: flex-end;
+}
+
+/* Mini menu */
+.mini-menu{
+    margin-top: 50px;
+    font-size: 12px;
+    line-height: 14px;
+}
+.mini-menu nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 14px;
+    font-size: 12px;
+    color: #333333;
+}
