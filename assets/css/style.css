@@ -1,110 +1,178 @@
 /* COMMON STYLES */
 body {
-    width: 1136px;
-    margin: 0 auto;
-    border: 2px dotted green;
-    font-family: "Trip Sans", Arial, sans-serif;
+  width: 1136px;
+  margin: 0 auto;
+  font-family: "Trip Sans", Arial, sans-serif;
 }
 
 h1 {
-    font-size: 54px;
-    line-height: 64px;
-    letter-spacing: 1.1;
-    font-weight: 900;
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 900;
+}
 
+h2 {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  padding: 20px 40px;
+  margin-top: 20px;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
 }
 
 /* HEADER */
 header {
-    margin-top: 160px;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-top: 160px;
+  margin-bottom: 25px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo img {
-    width: 188px;
+  width: 188px;
 }
 
 /* Navbar */
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 20px;
-    font-weight: 700;
-    font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 20px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 ul {
-    display: flex;
+  display: flex;
 }
 
 nav li {
-    padding: 20px;
+  padding: 20px;
 }
 
 .button {
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-    padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 /* MAIN */
 
 /* Header and menu buttons */
 h1 span {
-    color: #FF5D5D;
+  color: #ff5d5d;
+}
+
+.menu {
+  margin-top: 20px;
 }
 
 .menu ul {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
 }
 
 .menu li {
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 20px;
-    width: 140px;
-    height: 28px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  width: 140px;
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 20px;
 }
 
 /* Photos */
-.photos{
-    display: flex;
-    margin-top: 50px;
+.photos {
+  display: flex;
+  margin: 25px 0px;
 }
 
-.first-photo img{
-    width: 648px;
-    margin-right: 2px;
+.first-photo img {
+  width: 648px;
+  margin-right: 2px;
 }
 
-#image2, #image3 {
-width: 480px;
-height: 215px;
-align-items: flex-end;
+#image2,
+#image3 {
+  width: 482px;
+  height: 215px;
+  align-items: flex-end;
 }
 
 /* Mini menu */
-.mini-menu{
-    margin-top: 50px;
-    font-size: 12px;
-    line-height: 14px;
+.mini-menu {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 25px;
 }
+
 .mini-menu nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 14px;
-    font-size: 12px;
-    color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 14px;
+  font-size: 12px;
+  color: #333333;
+}
+
+/* Osaka description */
+.osaka-description {
+  display: flex;
+  height: 500px;
+  margin-bottom: 500px;
+  justify-content: space-between;
+}
+.flexbox {
+    max-height: 500px;
+}
+
+.summary-text {
+
+  flex: 1.5;
+  padding-right: 30px
+}
+
+.map{
+
+  border-radius: 20px;
+  background-color: #ff5d5d;
+  flex: 1
+}
+
+.map p {
+  padding: 0px 40px 20px;
+}
+
+.map button {
+    background-color:#333333;
+    color: white;
+    border-radius: 20px;
+    margin-left:40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    font-size: 20px
+}
+
+.map-container img {
+ 
 }
