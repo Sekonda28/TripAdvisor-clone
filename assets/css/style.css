@@ -62,6 +62,11 @@ p {
   color: #333333;
 }
 
+button:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 /* HEADER */
 
 header {
@@ -349,6 +354,12 @@ h1 span {
   margin: 10px
 }
 
+.block:hover {
+  opacity: 0.7;
+  cursor: pointer;
+
+}
+
 .block .car-img1 {
   height: 66%;
   width: 100%;
@@ -462,6 +473,10 @@ h1 span {
   font-family: "Trip Sans Reg", Arial, sans-serif;
   display: flex;
   flex-direction: column;
+}
+.louez-block:hover{
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .louez-block:not(:last-child) {
