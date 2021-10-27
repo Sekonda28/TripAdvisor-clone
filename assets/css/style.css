@@ -1,11 +1,23 @@
 /* GLOBAL RULES*/
 
 body {
-  width: 1136px;
   font-family: "Trip Sans Reg", Arial, sans-serif;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osk-font-smoothing: grayscale;
+  /* width: 1136px;
+  margin: 0 auto; */
+}
+
+.container {
+  width: 1136px;
+  margin: 0 auto
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 900;
 }
 
 h1 {
@@ -28,6 +40,7 @@ h3 {
   font-weight: 700;
   padding: 20px 40px;
 }
+
 h4 {
   font-size: 24px;
   line-height: 29px;
@@ -35,34 +48,47 @@ h4 {
   padding-bottom: 20px;
 }
 
+h5 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 p {
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   line-height: 24px;
   color: #333333;
 }
 
 /* HEADER */
+
 header {
   margin-bottom: 25px;
   padding: 5px;
   height: 60px;
+  display: flex;
+  /* Fixed header */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  margin: 0 auto;
+  background-color: white;
+  z-index: 1
+}
+
+.header-styles {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  /* Fixed header */
-  position: fixed;
-  width: 100%;
-  top: 0;
-  margin: 0 auto;
-  width: 1136px;
-  background-color: white;
 }
 
-.logo img {
+.logo img,
+footer img {
   width: 188px;
 }
 
@@ -102,7 +128,9 @@ header button {
 }
 
 /* MAIN */
-main{margin-top: 70px}
+main {
+  margin-top: 70px
+}
 
 /* H1 and menu buttons */
 h1 span {
@@ -208,6 +236,10 @@ h1 span {
   height: 100%;
 }
 
+.city-desc .col-1 p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 .city-desc .col-2 {
   border-radius: 20px;
   width: 450px;
@@ -253,29 +285,197 @@ h1 span {
 
 /* Carousel section */
 
-.slideshow .container{
+.slideshow .container {
   height: 360px;
   width: 100%;
-  border: red 2px solid;
   margin-bottom: 25px;
   display: flex
 }
 
-.slideshow .container .description{
+.slideshow .container .description {
   width: 25%;
-  border: green 2px solid;
 }
 
-.slideshow .container .carousel{
+.slideshow .container .carousel {
   flex: 1;
   display: flex;
+  overflow: scroll;
   flex-wrap: nowrap;
-  overflow-x: scroll;
+}
+.carousel::-webkit-scrollbar {
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+.carousel::-webkit-scrollbar-thumb:hover {
+  background: lightgrey;
 }
 
-.carousel .block{
-  width: 300px;
-  border: 2px blue solid;
+.description p {
+  font-size: 18px;
+  line-height: 22px;
+}
 
+.description .link, .submen .link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #545454;
+  text-decoration: underline;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.carousel .block {
+  flex-shrink: 0;
+  width: calc(33.4% - 10px);
+  overflow: hidden;
+  font-family: "Trip Sans Reg", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel .block:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon .fa-heart {
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px
+}
+
+.block .car-img1 {
+  height: 66%;
+  width: 100%;
+  background-image: url(../img/carousel1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.block .car-img2 {
+  height: 66%;
+  width: 100%;
+  background-image: url(../img/carousel2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.block .car-img3 {
+  height: 66%;
+  width: 100%;
+  background-image: url(../img/carousel3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.block .car-img4 {
+  height: 66%;
+  width: 100%;
+  background-image: url(../img/carousel4.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.block .car-img5 {
+  height: 66%;
+  width: 100%;
+  background-image: url(../img/carousel5.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.block .car-img6 {
+  height: 66%;
+  width: 100%;
+  background-image: url(../img/carousel6.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.scores {
+  padding-bottom: 10px;
+}
+
+.text .reviews {
+  font-size: 12px;
+  line-height: 14px;
+  color: #333333;
+  margin-left: 5px
+}
+
+.scores .fas,
+.far {
+  color: #00AA6C;
+  font-size: 80%;
+  margin-right: 2px;
+}
+
+.text .category {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+/* Louez une maison */
+.submen {
+  display: flex;
+  justify-content: space-between
+}
+.louez .louez-container {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex: 1
+}
+
+.louez .louez-block{
+  flex-shrink: 0;
+  width: calc(33.4% - 10px);
+  overflow: hidden;
+  font-family: "Trip Sans Reg", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.louez-block .lou-img1 {
+  height: 66%;
+  width: 100%;
+  background-image: url(../img/carousel1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* FOOTER */
+footer {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9F1EC
+}
+
+footer p{
+  font-family: "Trip Sans Reg", Arial, sans-serif;
+  margin-left: 20px;
+  font-weight: 500;
 }
 
