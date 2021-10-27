@@ -302,9 +302,12 @@ h1 span {
   overflow: scroll;
   flex-wrap: nowrap;
 }
+
 .carousel::-webkit-scrollbar {
-  background: transparent;  /* Optional: just make scrollbar invisible */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
 }
+
 .carousel::-webkit-scrollbar-thumb:hover {
   background: lightgrey;
 }
@@ -314,7 +317,8 @@ h1 span {
   line-height: 22px;
 }
 
-.description .link, .submen .link {
+.description .link,
+.submen .link {
   font-size: 16px;
   line-height: 19px;
   color: #545454;
@@ -411,7 +415,7 @@ h1 span {
   padding-bottom: 10px;
 }
 
-.text .reviews {
+.reviews {
   font-size: 12px;
   line-height: 14px;
   color: #333333;
@@ -419,13 +423,13 @@ h1 span {
 }
 
 .scores .fas,
-.far {
+.scores .far {
   color: #00AA6C;
-  font-size: 80%;
+  font-size: 70%;
   margin-right: 2px;
 }
 
-.text .category {
+.category {
   font-size: 14px;
   line-height: 17px;
   color: #333333;
@@ -436,31 +440,108 @@ h1 span {
   display: flex;
   justify-content: space-between
 }
-.louez .louez-container {
-  height: 400px;
-  width: 100%;
-  margin-bottom: 25px;
-  display: flex;
-  flex: 1
+
+.louez {
+  margin-bottom: 50px;
 }
 
-.louez .louez-block{
+.louez-container {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  overflow: scroll;
+  flex-wrap: nowrap;
+}
+
+.louez-block {
   flex-shrink: 0;
-  width: calc(33.4% - 10px);
+  width: calc(34% - 10px);
+  height: 100%;
   overflow: hidden;
   font-family: "Trip Sans Reg", Arial, sans-serif;
   display: flex;
   flex-direction: column;
 }
 
+.louez-block:not(:last-child) {
+  margin-right: 5px;
+}
+
+.louez-container::-webkit-scrollbar {
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+.louez-container::-webkit-scrollbar-thumb:hover {
+  background: lightgrey;
+}
+
 .louez-block .lou-img1 {
   height: 66%;
   width: 100%;
-  background-image: url(../img/carousel1.jpg);
+  background-image: url(../img/louez1.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: flex-end;
+}
+
+.louez-block .lou-img2 {
+  height: 66%;
+  width: 100%;
+  background-image: url(../img/louez2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.louez-block .lou-img3 {
+  height: 66%;
+  width: 100%;
+  background-image: url(../img/louez3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.louez-block .lou-img4 {
+  height: 66%;
+  width: 100%;
+  background-image: url(../img/louez4.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.louez-block .lou-img5 {
+  height: 66%;
+  width: 100%;
+  background-image: url(../img/louez5.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.louez-block .lou-img6 {
+  height: 66%;
+  width: 100%;
+  background-image: url(../img/louez6.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.price-desc {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  padding-top: 10px;
 }
 
 
@@ -473,9 +554,8 @@ footer {
   background-color: #F9F1EC
 }
 
-footer p{
+footer p {
   font-family: "Trip Sans Reg", Arial, sans-serif;
   margin-left: 20px;
   font-weight: 500;
 }
-
