@@ -1,15 +1,18 @@
-/* COMMON STYLES */
+/* GLOBAL RULES*/
 
 body {
   width: 1136px;
-  font-family: "Trip Sans", Arial, sans-serif;
-  margin: auto;
+  font-family: "Trip Sans Reg", Arial, sans-serif;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osk-font-smoothing: grayscale;
 }
 
 h1 {
   font-size: 54px;
   line-height: 64px;
   font-weight: 900;
+  font-family: "Trip Sans Med", Arial, sans-serif;
 }
 
 h2 {
@@ -25,6 +28,12 @@ h3 {
   font-weight: 700;
   padding: 20px 40px;
 }
+h4 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
 
 p {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -35,12 +44,22 @@ p {
 
 /* HEADER */
 header {
-  margin-top: 160px;
   margin-bottom: 25px;
+  padding: 5px;
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  /* Fixed header */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  margin: 0 auto;
+  width: 1136px;
+  background-color: white;
 }
 
 .logo img {
@@ -52,85 +71,112 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 20px;
-  font-weight: 700;
-  font-size: 16px;
 }
 
-ul {
+header ul {
   display: flex;
+  margin-right: 10px;
 }
 
-nav li {
+header li {
   padding: 10px 15px;
   margin: 5px;
 }
-header nav li:hover {
+
+header li:hover {
   background-color: lightgrey;
   border-radius: 20px;
+  cursor: pointer;
 }
 
-.button {
+header button {
   background-color: black;
   color: white;
   border-radius: 20px;
   padding: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  border: none;
 }
 
 /* MAIN */
+main{margin-top: 70px}
 
-/* Header and menu buttons */
+/* H1 and menu buttons */
 h1 span {
   color: #ff5d5d;
 }
 
 .menu {
   margin-top: 20px;
+
 }
 
 .menu ul {
   display: flex;
-  justify-content: space-between;
   font-weight: 700;
+  justify-content: space-between;
+
 }
 
 .menu li {
   border: 1px solid black;
   border-radius: 15px;
   padding: 20px;
-  width: 140px;
+  flex: 1;
   height: 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   line-height: 20px;
 }
+
+.menu li:not(:last-child) {
+  margin-right: 10px;
+}
+
 .menu li:hover {
   border: 1px solid white;
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
-/* Photos */
+/* Photos section */
 .photos {
+  height: 430px;
   display: flex;
   margin: 25px 0px;
 }
 
 .photos img:hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 
-.first-photo img {
-  width: 648px;
-  margin-right: 2px;
+.photos .col-1 {
+  flex: 1;
+  height: 100%;
+  margin-right: 2px
 }
 
-#image2,
-#image3 {
+.photos .col-2 {
   width: 482px;
-  height: 215px;
-  align-items: flex-end;
+  height: 100%
+}
+
+.photos .col-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photos .col-2 img {
+  width: 100%;
+  height: calc(50% - 1.5px);
+  object-fit: cover;
 }
 
 /* Mini menu */
@@ -149,26 +195,32 @@ h1 span {
   color: #333333;
 }
 
-/* Osaka description */
-.osaka {
+/* Osaka description text and map section*/
+.city-desc {
   display: flex;
-  margin-bottom: 500px;
+  height: 500px;
+  margin-bottom: 25px;
 }
 
-.summary-text {
+.city-desc .col-1 {
   padding-right: 80px;
+  flex: 1;
+  height: 100%;
 }
 
-.map {
+.city-desc .col-2 {
   border-radius: 20px;
   width: 450px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.map p {
+.city-desc .col-2 p {
   padding: 0px 40px 20px;
 }
 
-.map button {
+.city-desc button {
   background-color: #333333;
   color: white;
   border-radius: 20px;
@@ -176,13 +228,54 @@ h1 span {
   margin-bottom: 40px;
   padding: 20px;
   font-size: 20px;
+  border: none;
+  font-family: inherit;
 }
-.map-text {
+
+.city-desc .col-2 .map-text {
   background-color: #ff5d5d;
   border-radius: 20px;
+  width: 100%;
+  height: 66%;
 }
+
 .map-image {
+  flex: 1;
   margin-top: -20px;
-  overflow: hidden;
-  max-height: 200px;
+  height: 34%
 }
+
+.city-desc .col-2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover
+}
+
+/* Carousel section */
+
+.slideshow .container{
+  height: 360px;
+  width: 100%;
+  border: red 2px solid;
+  margin-bottom: 25px;
+  display: flex
+}
+
+.slideshow .container .description{
+  width: 25%;
+  border: green 2px solid;
+}
+
+.slideshow .container .carousel{
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.carousel .block{
+  width: 300px;
+  border: 2px blue solid;
+
+}
+

@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- fonts -->
-    <link rel="stylesheet" href="./assets/fonts/transfonter.org-20211026-123849/TripSansFontFace.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
 
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/bb54014cd5.js"></script>
+    <script src="https://kit.fontawesome.com/9c6011eb6d.js" crossorigin="anonymous"></script>
     <!-- stylesheets -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -18,90 +18,115 @@
     <title>Trip Advisor</title>
 </head>
 
-<header>
-    <div class="logo">
-        <img src="./assets/img/Tripadvisor_logo.svg" alt="Tripadvisor logo" />
-    </div>
-    <nav>
-        <ul>
-            <li><i class="fas fa-pen"></i> </i>&nbspAvis</li>
-            <li><i class="far fa-heart"></i>&nbspVoyages</li>
-            <li><i class="far fa-bell"></i>&nbspAlertes</li>
-        </ul>
-        <div class="button">
-            <span>Connectez-vous</span>
-        </div>
-    </nav>
-</header>
-
 
 <body>
-    <h1><span>Explorez</span>&nbspOsaka</h1>
 
-    <div class="menu">
-        <ul>
-            <li>Hôtels<i class="fas fa-hotel"></i></li>
-            <li>Locations de vacances<i class="fas fa-key"></i></li>
-            <li>Activités<i class="fas fa-film"></i></li>
-            <li>Restaurants<i class="fas fa-utensils"></i></li>
-            <li>Forums de voyage<i class="far fa-comments"></i></li>
-            <li>Plus<i class="fas fa-ellipsis-h"></i></li>
-        </ul>
-    </div>
-
-    <div class="photos">
-        <div class="first-photo">
-            <img id="image1" src="./assets/img/Photo1.jpg" alt="Women outside temple">
+    <header>
+        <div class="logo">
+            <img src="./assets/img/Tripadvisor_logo.svg" alt="Tripadvisor logo" />
         </div>
-        <div class="column">
-            <img id="image2" src="./assets/img/photo2jpg.jpg" alt="Castle on a lake">
-            <img id="image3" src="./assets/img/photo3.jpg" alt="fish in aquarium">
-        </div>
-    </div>
-
-    <div class="mini-menu">
         <nav>
-            <span> Asia > Japon > Kinki > Préfecture d'Osaka > Osaka <i class="fas fa-caret-down"></i></span>
-            <span>Visiter: Osaka</span>
+            <ul>
+                <li><i class="fas fa-pen"></i> </i>&nbspAvis</li>
+                <li><i class="far fa-heart"></i>&nbspVoyages</li>
+                <li><i class="far fa-bell"></i>&nbspAlertes</li>
+            </ul>
+            <!-- <div class="button"> -->
+            <button>Connectez-vous</button>
+            <!-- </div> -->
         </nav>
-    </div>
+    </header>
 
-    <div class="osaka">
-        <div class="summary-text">
-            <h2>Une capitale éclectique où la cuisine est aussi délicieuse que les paysages sont superbes</h2>
-            <p>Avec une population avoisinant les neuf millions d'habitants et une économie florissante qui dépasse
-                celles
-                de Hong Kong et de la Thaïlande, Osaka est une ville saisissante. Pleine d'assurance et élégante, la
-                ville
-                regorge de magasins, de superbes restaurants et lieux de vie nocturne. C'est un point de départ idéal
-                pour
-                partir à la découverte de la région du Kansai. Les sites de Kyoto, classés au patrimoine mondial, le
-                temple
-                de Nara et les tombes fascinantes de Koya-san se trouvent à 90 minutes en train. Les principales
-                attractions
-                de la ville incluent l'aquarium, le château d'Osaka, les Studios Universal japonais et l'observatoire
-                futuriste du jardin flottant.</p>
-        </div>
-        <div class="map">
-            <div class="map-text">
-                <h3>Osaka: Commencez à organiser !</h3>
-                <p>Créez un voyage pour enregister et organiser toutes vos idées et les visualiser sur une carte.
-                </p>
-                <button>Créez un voyage</button>
-            </div>
-            <div class="map-image">
-                <img src="./assets/img/osaka-map.png" alt="map of osaka">
-            </div>
+    <main>
+        <h1><span>Explorez</span>&nbspOsaka</h1>
 
+        <div class="menu">
+            <ul>
+                <li>Hôtels<i class="fas fa-hotel"></i></li>
+                <li>Locations de vacances<i class="fas fa-key"></i></li>
+                <li>Activités<i class="fas fa-film"></i></li>
+                <li>Restaurants<i class="fas fa-utensils"></i></li>
+                <li>Forums de voyage<i class="far fa-comments"></i></li>
+                <li>Plus<i class="fas fa-ellipsis-h"></i></li>
+            </ul>
         </div>
 
-    </div>
+        <div class="photos">
+            <div class="col-1">
+                <img id="image1" src="./assets/img/Photo1.jpg" alt="Women outside temple">
+            </div>
+            <div class="col-2">
+                <img id="image2" src="./assets/img/photo2jpg.jpg" alt="Castle on a lake">
+                <img id="image3" src="./assets/img/photo3.jpg" alt="fish in aquarium">
+            </div>
+        </div>
+
+        <div class="mini-menu">
+            <nav>
+                <span> Asia > Japon > Kinki > Préfecture d'Osaka > Osaka <i class="fas fa-caret-down"></i></span>
+                <span>Visiter: Osaka</span>
+            </nav>
+        </div>
+
+        <div class="city-desc">
+            <div class="col-1">
+                <h2>Une capitale éclectique où la cuisine est aussi délicieuse que les paysages sont superbes</h2>
+                <p>Avec une population avoisinant les neuf millions d'habitants et une économie florissante qui dépasse
+                    celles
+                    de Hong Kong et de la Thaïlande, Osaka est une ville saisissante. Pleine d'assurance et élégante, la
+                    ville
+                    regorge de magasins, de superbes restaurants et lieux de vie nocturne. C'est un point de départ
+                    idéal
+                    pour
+                    partir à la découverte de la région du Kansai. Les sites de Kyoto, classés au patrimoine mondial, le
+                    temple
+                    de Nara et les tombes fascinantes de Koya-san se trouvent à 90 minutes en train. Les principales
+                    attractions
+                    de la ville incluent l'aquarium, le château d'Osaka, les Studios Universal japonais et
+                    l'observatoire
+                    futuriste du jardin flottant.</p>
+            </div>
+            <div class="col-2">
+                <div class="map-text">
+                    <h3>Osaka: Commencez à organiser !</h3>
+                    <p>Créez un voyage pour enregister et organiser toutes vos idées et les visualiser sur une carte.
+                    </p>
+                    <button>Créez un voyage</button>
+                </div>
+                <div class="map-image">
+                    <img src="./assets/img/osaka-map.png" alt="map of osaka">
+                </div>
+            </div>
+        </div>
+
+        <section class="slideshow">
+            <h2>Les essentiels de Osaka</h2>
+            <div class="container">
+                <div class="description">
+                    <h4>Se divertir</h4>
+                    <p>Endroits à voir, façons de se promener et expériences caractéristiques de Osaka.</p>
+                </div>
+                <div class="carousel">
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                </div>
+                <div></div>
+
+            </div>
+
+            </div>
 
 
+        </section>
+    </main>
 
 
+    <footer></footer>
 </body>
 
-<footer></footer>
 
 </html>
