@@ -323,7 +323,8 @@ h1 span {
 /* Section Les essentiels de Osaka  */
 
 .slideshow .ss-container {
-  height: 360px;
+  min-height: 360px;
+  flex: 1;
   width: 100%;
   margin-bottom: 25px;
   display: flex
@@ -395,8 +396,8 @@ h1 span {
 }
 
 .block .car-img1 {
-  height: 66%;
-  max-width: 100%;
+  height: 100%;
+
   background-image: url(../img/carousel1.jpg);
   background-size: cover;
   background-position: center;
@@ -406,8 +407,8 @@ h1 span {
 
 
 .block .car-img2 {
-  height: 66%;
-  width: 100%;
+  height: 100%;
+
   background-image: url(../img/carousel2.jpg);
   background-size: cover;
   background-position: center;
@@ -416,8 +417,8 @@ h1 span {
 }
 
 .block .car-img3 {
-  height: 66%;
-  width: 100%;
+  height: 100%;
+  ;
   background-image: url(../img/carousel3.jpg);
   background-size: cover;
   background-position: center;
@@ -426,8 +427,8 @@ h1 span {
 }
 
 .block .car-img4 {
-  height: 66%;
-  width: 100%;
+  height: 100%;
+
   background-image: url(../img/carousel4.jpg);
   background-size: cover;
   background-position: center;
@@ -436,8 +437,8 @@ h1 span {
 }
 
 .block .car-img5 {
-  height: 66%;
-  width: 100%;
+  height: 100%;
+
   background-image: url(../img/carousel5.jpg);
   background-size: cover;
   background-position: center;
@@ -446,8 +447,8 @@ h1 span {
 }
 
 .block .car-img6 {
-  height: 66%;
-  width: 100%;
+  height: 100%;
+
   background-image: url(../img/carousel6.jpg);
   background-size: cover;
   background-position: center;
@@ -456,6 +457,9 @@ h1 span {
 }
 
 /* Text below carousel items - note reuses 'category and scores' from global rules*/
+.text {
+  max-height: 34%;
+}
 
 .reviews {
   font-size: 12px;

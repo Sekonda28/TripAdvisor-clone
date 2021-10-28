@@ -50,36 +50,39 @@
     .photos {
         height: 275px
     }
+
     /* Osaka description text and map section*/
     .city-desc {
         display: flex;
         flex-direction: column;
         height: inherit
-      }
-      .city-desc .col-1 {
+    }
+
+    .city-desc .col-1 {
         padding-right: 10px;
-       margin-bottom: 25px;
-        height:inherit;
-      }
+        margin-bottom: 25px;
+        height: inherit;
+    }
 
-      /* Explore Osaka block */
+    /* Explore Osaka block */
 
-      .carousel .block {
+    .carousel .block {
         /* flex-shrink: 0; */
         height: inherit;
         width: calc(50% - 10px);
 
-      }
-      .slideshow .ss-container .description {
-        width: 40%;
-      }
+    }
 
-      /* louez section */
-      .louez-block {
+    .slideshow .ss-container .description {
+        width: 40%;
+    }
+
+    /* louez section */
+    .louez-block {
 
         width: calc(40% - 10px);
-    
-      }
+
+    }
 }
 
 
@@ -97,18 +100,19 @@
         font-size: 16px;
         line-height: 21px;
         color: #333333;
-      }
+    }
 
-      h3{
-      font-size: 28px;
-      line-height: 33px;
-      }
+    h3 {
+        font-size: 28px;
+        line-height: 33px;
+    }
 
     /* header */
     header nav {
         display: none
     }
-    header{
+
+    header {
         height: 40px
     }
 
@@ -171,40 +175,94 @@
         display: none;
 
     }
+
     /* Mini menu */
     .mini-menu {
         display: none
     }
+
     .city-desc .col-2 {
 
         max-width: 100%;
         padding-bottom: 20px;
-     
-      }
-      .city-desc button {
+
+    }
+
+    .city-desc button {
         padding: 10px;
         font-size: 18px;
         margin-bottom: 20px;
-      }
-      .city-desc .col-2 img {
+    }
+
+    .city-desc .col-2 img {
         display: none;
-      }
+    }
 
 
-      /* Explore Osaka block */
-      .slideshow .ss-container {
-    
+    /* Explore Osaka block */
+    .slideshow .ss-container {
+
         flex-direction: column;
-   
-      }
-      .slideshow .ss-container .description {
+
+    }
+
+    .slideshow .ss-container .description {
         width: inherit;
         padding-bottom: 25px;
-      }
-      .carousel .block {
-  
+    }
+
+    .carousel .block {
+
         height: 360px;
         width: calc(50% - 10px);
-    
-      }
+
+    }
+
+    .louez-block {
+
+        width: calc(50% - 10px);
+
+    }
+
+}
+
+@media(max-width: 600px) {
+    .carousel .block {
+
+        width: calc(100% - 10px);
+
+    }
+
+    .louez-block {
+
+        width: calc(100% - 10px);
+
+    }
+
+    .menu {
+        display: none
+    }
+
+    .submen {
+        display: inherit;
+        padding-bottom: 10px;
+    }
+
+    footer {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F9F1EC
+    }
+
+    footer p {
+        font-family: "Trip Sans Reg", Arial, sans-serif;
+        text-align: center;
+        margin-left: 20px;
+        font-weight: 500;
+        padding-top: 10px;
+    }
+
 }
