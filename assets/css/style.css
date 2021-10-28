@@ -5,8 +5,6 @@ body {
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osk-font-smoothing: grayscale;
-  /* width: 1136px;
-  margin: 0 auto; */
 }
 
 .container {
@@ -65,6 +63,26 @@ p {
 button:hover{
   opacity: 0.7;
   cursor: pointer;
+}
+
+/* Text and icon styling below carousel items */
+.scores {
+  padding-bottom: 10px;
+}
+.scores .fas,
+.scores .far {
+  color: #00AA6C;
+  font-size: 70%;
+  margin-right: 2px;
+}
+
+.category {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+.scores {
+  padding-bottom: 10px;
 }
 
 /* HEADER */
@@ -288,7 +306,7 @@ h1 span {
   object-fit: cover
 }
 
-/* Carousel section */
+/* Section Les essentiels de Osaka  */
 
 .slideshow .container {
   height: 360px;
@@ -310,7 +328,6 @@ h1 span {
 
 .carousel::-webkit-scrollbar {
   background: transparent;
-  /* Optional: just make scrollbar invisible */
 }
 
 .carousel::-webkit-scrollbar-thumb:hover {
@@ -421,10 +438,7 @@ h1 span {
   justify-content: flex-end;
 }
 
-
-.scores {
-  padding-bottom: 10px;
-}
+/* Text below carousel items - note reuses 'category and scores' from global rules*/
 
 .reviews {
   font-size: 12px;
@@ -433,20 +447,8 @@ h1 span {
   margin-left: 5px
 }
 
-.scores .fas,
-.scores .far {
-  color: #00AA6C;
-  font-size: 70%;
-  margin-right: 2px;
-}
 
-.category {
-  font-size: 14px;
-  line-height: 17px;
-  color: #333333;
-}
-
-/* Louez une maison */
+/* Section louez une maison */
 .submen {
   display: flex;
   justify-content: space-between
@@ -457,7 +459,7 @@ h1 span {
 }
 
 .louez-container {
-  height: 400px;
+  height: 430px;
   width: 100%;
   display: flex;
   flex: 1;
@@ -485,7 +487,6 @@ h1 span {
 
 .louez-container::-webkit-scrollbar {
   background: transparent;
-  /* Optional: just make scrollbar invisible */
 }
 
 .louez-container::-webkit-scrollbar-thumb:hover {
@@ -551,12 +552,17 @@ h1 span {
   display: flex;
   justify-content: flex-end;
 }
-
+/* Text below louez block items - note reuses 'category and scores' from global rules */
 .price-desc {
   font-size: 16px;
   line-height: 19px;
   font-weight: bold;
   padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.lou-text {
+  height: 34%;
 }
 
 
