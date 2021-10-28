@@ -163,11 +163,13 @@ main {
 h1 span {
   color: #ff5d5d;
 }
+
 .short-menu i {
   display: none;
   font-size: 18px;
   color: #5F5F5F;
 }
+
 .menu {
   margin-top: 20px;
 
@@ -320,22 +322,24 @@ h1 span {
 
 /* Section Les essentiels de Osaka  */
 
-.slideshow .container {
+.slideshow .ss-container {
   height: 360px;
   width: 100%;
   margin-bottom: 25px;
   display: flex
 }
 
-.slideshow .container .description {
+.slideshow .ss-container .description {
   width: 25%;
+  padding-right: 20px
 }
 
-.slideshow .container .carousel {
+.slideshow .ss-container .carousel {
   flex: 1;
   display: flex;
   overflow-x: scroll;
   flex-wrap: nowrap;
+  flex-shrink: 0;
 }
 
 .carousel::-webkit-scrollbar {
@@ -363,6 +367,7 @@ h1 span {
 
 .carousel .block {
   flex-shrink: 0;
+  /* height: 300px; */
   width: calc(33.7% - 10px);
   overflow: hidden;
   font-family: "Trip Sans Reg", Arial, sans-serif;
@@ -391,7 +396,7 @@ h1 span {
 
 .block .car-img1 {
   height: 66%;
-  width: 100%;
+  max-width: 100%;
   background-image: url(../img/carousel1.jpg);
   background-size: cover;
   background-position: center;
@@ -471,10 +476,10 @@ h1 span {
 }
 
 .louez-container {
-  height: 430px;
+  min-height: 430px;
   width: 100%;
-  display: flex;
   flex: 1;
+  display: flex;
   overflow-x: scroll;
   flex-wrap: nowrap;
 }
@@ -482,8 +487,8 @@ h1 span {
 .louez-block {
   flex-shrink: 0;
   width: calc(33.6% - 10px);
-  height: 100%;
-  overflow: hidden;
+  /* height: 100%; */
+  overflow-y: hidden;
   font-family: "Trip Sans Reg", Arial, sans-serif;
   display: flex;
   flex-direction: column;
@@ -506,9 +511,13 @@ h1 span {
   background: lightgrey;
 }
 
+.img-container {
+  flex: 1
+}
+
 .louez-block .lou-img1 {
-  height: 66%;
-  width: 100%;
+
+  height: 100%;
   background-image: url(../img/louez1.jpg);
   background-size: cover;
   background-position: center;
@@ -516,9 +525,9 @@ h1 span {
   justify-content: flex-end;
 }
 
+
 .louez-block .lou-img2 {
-  height: 66%;
-  width: 100%;
+  height: 100%;
   background-image: url(../img/louez2.jpg);
   background-size: cover;
   background-position: center;
@@ -527,8 +536,7 @@ h1 span {
 }
 
 .louez-block .lou-img3 {
-  height: 66%;
-  width: 100%;
+  height: 100%;
   background-image: url(../img/louez3.jpg);
   background-size: cover;
   background-position: center;
@@ -537,8 +545,7 @@ h1 span {
 }
 
 .louez-block .lou-img4 {
-  height: 66%;
-  width: 100%;
+  height: 100%;
   background-image: url(../img/louez4.jpg);
   background-size: cover;
   background-position: center;
@@ -547,8 +554,7 @@ h1 span {
 }
 
 .louez-block .lou-img5 {
-  height: 66%;
-  width: 100%;
+  height: 100%;
   background-image: url(../img/louez5.jpg);
   background-size: cover;
   background-position: center;
@@ -557,8 +563,7 @@ h1 span {
 }
 
 .louez-block .lou-img6 {
-  height: 66%;
-  width: 100%;
+  height: 100%;
   background-image: url(../img/louez6.jpg);
   background-size: cover;
   background-position: center;
@@ -575,8 +580,14 @@ h1 span {
   padding-bottom: 20px;
 }
 
+.text-container {
+  max-height: 30%;
+  margin-bottom: 20px
+}
+
 .lou-text {
-  height: 34%;
+  max-height: 34%;
+  /* flex: 1 */
 }
 
 

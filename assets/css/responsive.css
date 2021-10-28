@@ -62,11 +62,27 @@
         height:inherit;
       }
 
-      
+      /* Explore Osaka block */
 
+      .carousel .block {
+        /* flex-shrink: 0; */
+        height: inherit;
+        width: calc(50% - 10px);
+
+      }
+      .slideshow .ss-container .description {
+        width: 40%;
+      }
+
+      /* louez section */
+      .louez-block {
+
+        width: calc(40% - 10px);
+    
+      }
 }
 
-/* Osaka description text and map section*/
+
 
 
 @media(max-width: 768px) {
@@ -129,10 +145,6 @@
         width: 133px;
     }
 
-
-
-
-
     .menu ul {
         flex-wrap: nowrap;
         overflow-x: scroll;
@@ -176,5 +188,23 @@
       }
       .city-desc .col-2 img {
         display: none;
+      }
+
+
+      /* Explore Osaka block */
+      .slideshow .ss-container {
+    
+        flex-direction: column;
+   
+      }
+      .slideshow .ss-container .description {
+        width: inherit;
+        padding-bottom: 25px;
+      }
+      .carousel .block {
+  
+        height: 360px;
+        width: calc(50% - 10px);
+    
       }
 }
