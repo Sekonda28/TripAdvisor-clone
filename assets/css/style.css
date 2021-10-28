@@ -8,8 +8,9 @@ body {
 }
 
 .container {
-  width: 1136px;
-  margin: 0 auto
+  max-width: 1136px;
+  margin: 0 auto;
+  padding: 0 20px
 }
 
 a {
@@ -89,9 +90,9 @@ button:hover{
 
 header {
   margin-bottom: 25px;
-  padding: 5px;
+  padding-top: 10px;
   height: 60px;
-  display: flex;
+  
   /* Fixed header */
   position: fixed;
   width: 100%;
@@ -193,6 +194,10 @@ h1 span {
   background-color: black;
   color: white;
   cursor: pointer;
+}
+
+.menu .hide-on-fs {
+  display: none;
 }
 
 /* Photos section */
