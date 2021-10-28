@@ -61,7 +61,7 @@ p {
   color: #333333;
 }
 
-button:hover{
+button:hover {
   opacity: 0.7;
   cursor: pointer;
 }
@@ -70,6 +70,7 @@ button:hover{
 .scores {
   padding-bottom: 10px;
 }
+
 .scores .fas,
 .scores .far {
   color: #00AA6C;
@@ -82,6 +83,7 @@ button:hover{
   line-height: 17px;
   color: #333333;
 }
+
 .scores {
   padding-bottom: 10px;
 }
@@ -92,7 +94,7 @@ header {
   margin-bottom: 25px;
   padding-top: 10px;
   height: 60px;
-  
+
   /* Fixed header */
   position: fixed;
   width: 100%;
@@ -117,6 +119,7 @@ footer img {
 }
 
 /* Navbar */
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -153,14 +156,18 @@ header button {
 
 /* MAIN */
 main {
-  margin-top: 70px
+  margin-top: 80px !important
 }
 
 /* H1 and menu buttons */
 h1 span {
   color: #ff5d5d;
 }
-
+.short-menu i {
+  display: none;
+  font-size: 18px;
+  color: #5F5F5F;
+}
 .menu {
   margin-top: 20px;
 
@@ -213,13 +220,13 @@ h1 span {
 }
 
 .photos .col-1 {
-  flex: 1;
+  min-width: 60%;
   height: 100%;
   margin-right: 2px
 }
 
 .photos .col-2 {
-  width: 482px;
+  flex: 1;
   height: 100%
 }
 
@@ -481,7 +488,8 @@ h1 span {
   display: flex;
   flex-direction: column;
 }
-.louez-block:hover{
+
+.louez-block:hover {
   opacity: 0.7;
   cursor: pointer;
 }
@@ -557,6 +565,7 @@ h1 span {
   display: flex;
   justify-content: flex-end;
 }
+
 /* Text below louez block items - note reuses 'category and scores' from global rules */
 .price-desc {
   font-size: 16px;

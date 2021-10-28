@@ -1,51 +1,180 @@
-@media(min-width: 1184px){
-   .container{ padding: 0}
+@media(min-width: 1184px) {
+    .container {
+        padding: 0
+    }
+
 }
 
 
-@media (max-width: 1184px){
+@media (max-width: 1184px) {
 
+    /* mini menu */
     .menu {
-        margin-top: 20px; 
         max-width: 100%;
-      }
-      
-      .menu ul {
-        display: flex;
-        font-weight: 700;
-        justify-content: space-between;
+    }
+
+    .menu ul {
         flex-wrap: wrap;
-      
-      }
-      
-      .menu li {
-        /* border: 1px solid black;
-        border-radius: 15px;*/
-        padding: 10px 20px; 
+
+    }
+
+    .menu li {
+        padding: 10px 20px;
         min-width: 16%;
-        /* height: 28px;
-        /* display: flex;
-        justify-content: space-between;
-        align-items: center;*/
         line-height: 10px;
-      }
-      
-      .menu li {
+    }
+
+    .menu li {
         margin-right: 10px;
         margin-bottom: 10px
-      }
-      
-       .menu .hide-on-fs {
+    }
+
+    .menu .hide-on-fs {
         display: inherit;
+    }
+}
+
+/* photos */
+
+.photos {
+    height: 375px
+}
+
+@media(max-width: 1024px) {
+    header span {
+        display: none;
+    }
+
+    /* photos */
+
+    .photos {
+        height: 275px
+    }
+    /* Osaka description text and map section*/
+    .city-desc {
+        display: flex;
+        flex-direction: column;
+        height: inherit
+      }
+      .city-desc .col-1 {
+        padding-right: 10px;
+       margin-bottom: 25px;
+        height:inherit;
+      }
+
+      
+
+}
+
+/* Osaka description text and map section*/
+
+
+@media(max-width: 768px) {
+
+    /* GLOBAL RULES */
+    h1 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 21px;
+        color: #333333;
+      }
+
+      h3{
+      font-size: 28px;
+      line-height: 33px;
+      }
+
+    /* header */
+    header nav {
+        display: none
+    }
+    header{
+        height: 40px
+    }
+
+    .short-menu i {
+        display: inherit;
+    }
+
+    .short-menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .sm-item {
+        width: 33.3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sm-item:first-child {
+        justify-content: flex-start;
+        padding-left: 10px
+    }
+
+    .sm-item:last-child {
+        justify-content: flex-end;
+        padding-right: 10px
+    }
+
+    .logo img,
+    footer img {
+        width: 133px;
+    }
+
+
+
+
+
+    .menu ul {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .menu li {
+        padding: 5px 20px;
+        min-width: 20%;
+        line-height: 10px;
+    }
+
+    .menu .hide-on-fs {
+        display: inherit;
+    }
+
+
+    /* photos */
+
+    .photos {
+        display: inherit;
+    }
+
+    .photos .col-2 {
+        display: none;
+
+    }
+    /* Mini menu */
+    .mini-menu {
+        display: none
+    }
+    .city-desc .col-2 {
+
+        max-width: 100%;
+        padding-bottom: 20px;
+     
+      }
+      .city-desc button {
+        padding: 10px;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .city-desc .col-2 img {
+        display: none;
       }
 }
-
-
-@media(max-width: 1024px){
-
-}
-
-@media(max-width: 768px){
-
-}
-
