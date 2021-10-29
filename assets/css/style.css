@@ -8,7 +8,7 @@ body {
   -moz-osk-font-smoothing: grayscale;
 }
 
-.hidden{
+.hidden {
   background-color: rgb(0, 0, 0, 0.7);
 }
 
@@ -178,50 +178,64 @@ form {
   width: 530px;
   height: 580px;
   background-color: rgb(255, 255, 255, 1.0);
-  border: red 2px solid;
-  justify-content: center;
-  align-items: center;
   border-radius: 20px;
 
 }
-form .fas {
-  font-size: 20px;
+
+#close-form {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
   color: black;
-  background-color: white;
-  border-radius: 50%;
-  /* padding: 10px;
-  margin-right: 10px; */
-  position: relative
+  align-self: flex-end;
+  padding: 10px 15px 0px;
+}
+
+#close-form:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.form-content {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
+
 
 form h4 {
   font-family: "Trip Sans Med", Arial, sans-serif;
   line-height: 20px;
-  padding-bottom:30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 
-  input,
-  textarea {
-    font-size: 20px;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    font-family: inherit;
-    border: black 2px solid;
-  }
+input,
+textarea {
+  font-size: 16px;
+  width: 50%;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  font-family: inherit;
+  border: black 2px solid;
+  font-weight: bold;
+}
 
-  form #send-button {
-      background-color: black;
-      color: white;
-      border-radius: 20px;
-      padding: 10px;
-      font-family: inherit;
-      font-size: 16px;
-      line-height: 20px;
-      font-weight: 700;
-      border: none;
-  }
+form #send-button {
+  background-color: rgb(79, 177, 79);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  border: none;
+  width: 40%;
+}
 
 /* MAIN */
 main {
