@@ -16,14 +16,35 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
+
     <title>Trip Advisor</title>
 </head>
 
 
-<body>
+<body id="body">
+    <section id="modal">
+        <div class="form">
+            <form>
+                <h4>Formulaire de contact</h4>
+                <input type="text" placeholder="Prénom" id="firstname" />
 
+                <input type="text" placeholder="Nom" id="lastname" />
+
+                <input type="email" placeholder="Email" id="email" />
+
+                <!-- <input type="password" placeholder="password" /> -->
+
+                <textarea rows="5" cols="20" placeholder="Écriver ici votre message..." id="message"></textarea>
+
+                <input id="send-button" type="submit" value="Envoyer le formulaire" />
+
+            </form>
+        </div>
+
+
+    </section>
     <!-- Header and Nav -->
-    <header>
+    <header id="header">
         <div class="container header-styles">
             <div class="short-menu">
                 <i class="fas fa-bars sm-item"></i>
@@ -40,14 +61,16 @@
                     <li><i class="far fa-bell"></i><span>&nbspAlertes</span></li>
                 </ul>
 
-                <button>Connectez-vous</button>
+                <button id="connect-button">Connectez-vous</button>
 
             </nav>
         </div>
     </header>
 
+
+
     <!-- Mini-menu -->
-    <main class="container">
+    <main id="main" class="container">
         <h1><span>Explorez</span>&nbspOsaka</h1>
 
         <div class="menu">
@@ -143,10 +166,10 @@
 
                     <div class="block">
                         <div class="img-container">
-                
-                                <div class="car-img2">
-                                    <div class=icon><i class="far fa-heart fa-sm"></i></div>
-                             
+
+                            <div class="car-img2">
+                                <div class=icon><i class="far fa-heart fa-sm"></i></div>
+
                             </div>
                         </div>
                         <div class="text-container">
@@ -260,7 +283,7 @@
                     </div>
                     <div class="text-container">
                         <div class="lou-text">
-                            <h5>Hostel Furoya, 3mins to JR station, 10mins to Osaka castle park.All Private room</h5>
+                            <h5>Hostel Furoya, 3mins to JR station, 10mins to Osaka castle park.</h5>
                             <p class="scores"><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i
                                     class="fas fa-circle"></i><i class="fas fa-circle"></i><i
                                     class="far fa-circle "></i><span class="reviews">3</span></p>
@@ -363,11 +386,14 @@
     </main>
 
 
-    <footer>
+    <footer id="footer">
         <img src="./assets/img/Tripadvisor_logo.svg" alt="Tripadvisor logo" />
         <p>Made at <a href="https://www.lereacteur.io/" target="blank">Le Reacteur</a> by <a
                 href="https://www.linkedin.com/in/matt-caswell-93458174/" target="blank">Matt Caswell</a> - 2021</p>
     </footer>
+
+    <!-- Javascript files -->
+    <script src="./assets/js/main.js"></script>
 </body>
 
 

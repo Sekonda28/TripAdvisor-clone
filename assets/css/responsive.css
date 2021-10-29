@@ -21,7 +21,7 @@
     .menu li {
         padding: 10px 20px;
         min-width: 16%;
-        line-height: 10px;
+        line-height: 18px;
     }
 
     .menu li {
@@ -32,12 +32,13 @@
     .menu .hide-on-fs {
         display: inherit;
     }
-}
+
 
 /* photos */
 
 .photos {
     height: 375px
+}
 }
 
 @media(max-width: 1024px) {
@@ -79,14 +80,13 @@
 
     /* louez section */
     .louez-block {
-
         width: calc(40% - 10px);
 
     }
+
+
+
 }
-
-
-
 
 @media(max-width: 768px) {
 
@@ -157,7 +157,7 @@
     .menu li {
         padding: 5px 20px;
         min-width: 20%;
-        line-height: 10px;
+        line-height: 18px;
     }
 
     .menu .hide-on-fs {
