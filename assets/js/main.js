@@ -1,4 +1,4 @@
-//const axios = require("axios");
+
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Page chargée");
@@ -28,10 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
       };
 
       // Requête vers le serveur :
-      const response = await axios.post("http://localhost:3000/form", data);
+      const response = await axios.post("https://trip-advisorback.herokuapp.com/form", data);
       // Réponse du serveur :
       if (response) {
         document.getElementById("mail-sent").style.display = "inherit";
       }
     });
 });
+
+// "https://trip-advisorback.herokuapp.com/form"
