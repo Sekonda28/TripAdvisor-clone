@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 
     <title>Trip Advisor</title>
 </head>
@@ -24,9 +27,9 @@
 <body id="body">
     <section id="modal">
         <div class="form">
-            <form>
+            <form id = "contact-form">
                 <div id="close-form"><i id="close-form" class="fas fa-times"></i></div>
-                <div class=form-content>
+                <div class="form-content">
                     <h4>Formulaire de contact</h4>
                     <input type="text" placeholder="Prénom" id="firstname" />
 
@@ -38,6 +41,7 @@
                     <textarea rows="5" cols="20" placeholder="Écriver ici votre message..." id="message"></textarea>
 
                     <input id="send-button" type="submit" value="Envoyer le formulaire" />
+                    <p id="mail-sent">Votre e-mail a été envoyé avec succès 🚀</p>
                 </div>
             </form>
         </div>

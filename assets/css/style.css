@@ -237,6 +237,15 @@ form #send-button {
   width: 40%;
 }
 
+#send-button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+#mail-sent{
+  display: none;
+  color: red;
+}
+
 /* MAIN */
 main {
   margin-top: 80px !important
